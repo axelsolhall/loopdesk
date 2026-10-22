@@ -1,0 +1,28 @@
+[project]
+name = "loopdesk"
+version = "0.0.1"
+description = "Local control desk for AI agents (MCP server + web UI): tasks with completion criteria, recorded assumptions, one-click human approval and clarification."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Axel Solhall" }]
+requires-python = ">=3.11"
+dependencies = []
+keywords = ["mcp", "model-context-protocol", "ai-agents", "human-in-the-loop", "claude-code"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+]
+
+[project.urls]
+Homepage = "https://loopdesk.dev"
+Repository = "https://github.com/axelsolhall/loopdesk"
+
+[project.scripts]
+loopdesk = "loopdesk:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
